@@ -1,0 +1,19 @@
+{
+  "name": "mattdanger/phalcon-utils",
+  "type": "library",
+  "description": "Phalcon v1.4.x utilities and helpers",
+  "keywords": ["phalcon"],
+  "homepage": "https://github.com/mattdanger/phalcon-utils",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Matt West",
+      "email": "matt@mattdanger.net",
+      "homepage": "http://mattdanger.net",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0"
+  }
+}
