@@ -1,26 +1,26 @@
 <?php
-namespace PhalconUtils\Validator;
+namespace Tcasn\Forms\Validator;
 
 use Phalcon\Validation\Validator;
 use Phalcon\Validation\ValidatorInterface;
 use Phalcon\Validation\Message;
 use Phalcon\DI;
 
-class PhoneValidator extends Validator implements ValidatorInterface
+class Phone extends Validator implements ValidatorInterface
 {
 
   public function __construct($options = null)
   {
 
     parent::__construct($options);
-    $this->setOption("cancelOnFail", TRUE);
+    $this->setOption('cancelOnFail', TRUE);
 
   }
 
 
   public function validate($validator, $attribute)
   {
-    //obtain value
+
     $value = $validator->getValue($attribute);
 
     // Source https://ericholmes.ca/php-phone-number-validation-revisited/
@@ -45,6 +45,7 @@ class PhoneValidator extends Validator implements ValidatorInterface
     $validator->appendMessage(new Message($message, $attribute, 'Phone'));
 
     return FALSE;
+
   }
 
 }
