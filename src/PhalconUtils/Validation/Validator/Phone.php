@@ -1,5 +1,5 @@
 <?php
-namespace Tcasn\Forms\Validator;
+namespace PhalconUtils\Validation\Validator;
 
 use Phalcon\Validation\Validator;
 use Phalcon\Validation\ValidatorInterface;
